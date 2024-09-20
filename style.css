@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth;
+}
+header {
+    display: grid;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.element {
+    display: inline;
+    padding: 20px;
+}
+.section-padding {
+    padding-top: 80px; 
+}
+
+.box1, .skill, .project, .port {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.box1.active, .skill.active, .project.active, .port.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box1, .skill, .project, .port {
+    transform: translateY(50px);
+}
+
+.box1 {
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+    padding: 15px 15px 0px 15px;
+}
+
+.skill {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    font-size: larger;
+    border-radius: 20%;
+    line-height: 1.8;
+}
+
+.project {
+    width: 400px;
+    height: 370px;
+    background-color: gray;
+    border-radius: 20%;
+    padding: 50px;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: larger;
+}
+
+.port {
+    width: 400px;
+    height: 370px;
+    background-color: gray;
+    border-radius: 20%;
+    padding: 50px;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: larger;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.intern{
+    width: 400px;
+    height: 250px;
+    background-color: gray;
+    border-radius: 20%;
+    padding: 40px;
+    text-align: justify;
+    font-size: larger;
+}
